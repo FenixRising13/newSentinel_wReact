@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Articles from "./components/Articles/Articles.js";
+import Article from "./components/Article/Article.js"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to newSentinel</h2>
+          <h5>Get Started:</h5><button className='btn btn-secondary'>Scrape</button>
         </div>
         <p className="App-intro">
-          To get started, press <code><button className='btn btn-secondary'>Scrape</button></code>
+          This is where articles will be.
         </p>
+        {Articles};
+        {Article};
       </div>
     );
   }
